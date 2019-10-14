@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+.site {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main right"
+    "footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.right {
+    grid-area: right;
+}
+
+.player {
+    font-size: 50px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: darkmagenta;
+    text-align: center;
+}
+
+h1 {
+    border-bottom: 3 px solid darkmagenta;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.gameFlexGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    display: flex;
+    height: 125px;
+    width: 125px;
+    border: 3px solid black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.40);
+}
