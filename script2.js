@@ -1,6 +1,5 @@
 // Assign ID for each square in grid
 
-
 let playerTurn = "X";
 
 let moves = [];
@@ -22,7 +21,9 @@ for (i=0; i < squares.length; i++) {
 
 // Assign click listener to each square, button and X and O
 
-button.addEventListener("click");
+button.addEventListener("click", function(){
+
+});
 
 //Create empty array for player selections
 
@@ -39,9 +40,10 @@ function selected(squares, callback) {
 
 const clicked = document.getElementById("squares").innerText;
 
+
 // For loop to determine winner
 
-// for(let i = 0; i <= length; i++)
+// for(let i = 0; i <= 9; i++)
 //     if (0 === 1  && 1 === 2 || 2 === 1 && 1 === 0) {
 //         alert("X wins!");
 //     } else if (3 === 4 && 4 === 5 || 5 === 4 && 4 === 3) {
