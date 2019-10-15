@@ -9,7 +9,7 @@ for (i=0; i < squares.length; i++) {
     squares[i].id = i;
     squares[i].addEventListener("click", function() {
         this.innerText = playerTurn;
-        moves[this.id] = playerTurn;
+        moves[this.id] = playerTurn;    
         counter++
         if (counter > 4) {
             checkForWinner()
@@ -22,10 +22,6 @@ for (i=0; i < squares.length; i++) {
         // console.log(moves);
     });
 }
-
-// Create callback function to get square ID# and send it to empty array
-
-// Create innerText function to record each X or O click
 
 // For loop to determine winner
 
