@@ -27,23 +27,23 @@ for (i=0; i < squares.length; i++) {
 
 function checkForWinner() {
     if (moves[0] === moves[1] && moves[1] === moves[2] && moves[0] !== '') {
-        console.log(`${playerTurn} wins!`);
+        alert(`${playerTurn} wins!`);
     } else if (moves[3] === moves[4] && moves[4] === moves[5] && moves[3] !== '') {
-        console.log(`${playerTurn} wins!`);
+        alert(`${playerTurn} wins!`);
     } else if (moves[6] === moves[7] && moves[7] === moves[8] && moves[6] !== '') {
-        console.log(`${playerTurn} wins!`);
+        alert(`${playerTurn} wins!`);
     } else if (moves[0] === moves [3] && moves[3] === moves[6] && moves[0] !== '') {
-        console.log(`${playerTurn} wins!`);
+        alert(`${playerTurn} wins!`);
     } else if (moves [1] === moves [4] && moves[4] === moves[7] && moves[1] !== '') {
-        console.log(`${playerTurn} wins!`);
+        alert(`${playerTurn} wins!`);
     } else if (moves[2] === moves[5] && moves[5] === moves[8] && moves[2] !== '') {
-        console.log(`${playerTurn} wins!`);
+        alert(`${playerTurn} wins!`);
     } else if (moves[0] === moves[4] && moves[4] === moves[8] && moves[0] !== '') {
-        console.log(`${playerTurn} wins!`);
+        alert(`${playerTurn} wins!`);
     } else if (moves[2] === moves[4] && moves[4] === moves[6] && moves[2] !== '') {
-        console.log(`${playerTurn} wins!`);
+        alert(`${playerTurn} wins!`);
     } else if (counter === 9) {
-        console.log("Draw! Start new game.");
+        alert("Draw! Start new game.");
     } else {
         return
     }
