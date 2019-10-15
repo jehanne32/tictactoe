@@ -21,9 +21,13 @@ for (i=0; i < squares.length; i++) {
 
 // Assign click listener to each square, button and X and O
 
-button.addEventListener("click", function(){
+document.getElementById(".button").addEventListener("click", function() {
 
 });
+
+const clicked() {
+    alert(document.getElementById("squares").innerText)
+}
 
 //Create empty array for player selections
 
@@ -38,29 +42,28 @@ function selected(squares, callback) {
 
 // Create innerText function to record each X or O click
 
-const clicked = document.getElementById("squares").innerText;
 
 
 // For loop to determine winner
 
-// for(let i = 0; i <= 9; i++)
-//     if (0 === 1  && 1 === 2 || 2 === 1 && 1 === 0) {
-//         alert("X wins!");
-//     } else if (3 === 4 && 4 === 5 || 5 === 4 && 4 === 3) {
-//         alert("X wins!");
-//     } else if (6 === 7 && 7 === 8 || 8 === 7 && 7 === 6) {
-//         alert("X wins!");
-//     } else if (0 === 3 && 3 === 6 || 6 === 3 && 3 === 0) {
-//         alert("X wins!");
-//     } else if (1 === 4 && 4 === 7 || 7 === 4 && 4 === 1) {
-//         alert("X wins!");
-//     } else if (2 === 5 && 5 === 8 || 8 === 5 && 5 === 2) {
-//         alert("X wins!");
-//     } else if (0 === 4 && 4 === 8 || 8 === 4 && 4 === 0) {
-//         alert("X wins!");
-//     } else if (2 === 4 && 4 === 6 || 6 === 4 && 4 === 2) {
-//         alert("X wins!");
-//     } else alert("Draw!");
+for(let i = 0; i <= 9; i++)
+    if (0 === 1  && 1 === 2 || 2 === 1 && 1 === 0) {
+        alert("X wins!");
+    } else if (3 === 4 && 4 === 5 || 5 === 4 && 4 === 3) {
+        alert("X wins!");
+    } else if (6 === 7 && 7 === 8 || 8 === 7 && 7 === 6) {
+        alert("X wins!");
+    } else if (0 === 3 && 3 === 6 || 6 === 3 && 3 === 0) {
+        alert("X wins!");
+    } else if (1 === 4 && 4 === 7 || 7 === 4 && 4 === 1) {
+        alert("X wins!");
+    } else if (2 === 5 && 5 === 8 || 8 === 5 && 5 === 2) {
+        alert("X wins!");
+    } else if (0 === 4 && 4 === 8 || 8 === 4 && 4 === 0) {
+        alert("X wins!");
+    } else if (2 === 4 && 4 === 6 || 6 === 4 && 4 === 2) {
+        alert("X wins!");
+    } else alert("Draw!");
 
 document.querySelectorAll(square)
 if (square === "X" || "O") {
