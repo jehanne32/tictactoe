@@ -23,6 +23,7 @@
 
 .right {
     grid-area: right;
+    margin-top: 125px;
 }
 
 .player {
@@ -31,6 +32,7 @@
 
 .footer {
     grid-area: footer;
+    margin-top: 40px;
 }
 
 body {
