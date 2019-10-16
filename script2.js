@@ -4,6 +4,8 @@ let playerTurn = "X";
 let counter = 0
 let moves = ['','','','','','','','',''];
 
+// function to loop through filled in squares and check for winner
+
 const squares = document.querySelectorAll(".square");
 for (i=0; i < squares.length; i++) {
     squares[i].id = i;
@@ -19,11 +21,11 @@ for (i=0; i < squares.length; i++) {
         } else {
             playerTurn = "X";
         }
-        // console.log(moves);
     });
 }
 
 // For loop to determine winner
+// Alerts to notify winner or draw
 
 function checkForWinner() {
     if (moves[0] === moves[1] && moves[1] === moves[2] && moves[0] !== '') {
@@ -48,3 +50,10 @@ function checkForWinner() {
         return
     }
 }
+
+// const empty = document.querySelectorAll(".square");
+//     for (i = 0; i <= squares.length; i++) {
+//         if (squares === "X" || squares === "O") {
+//             squares = " ";
+//         }
+// }
