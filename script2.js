@@ -51,11 +51,13 @@ function checkForWinner() {
     }
 }
 
-// document.getElementById("button").click
-// let square = document.querySelectorAll(".squares");
-//     for (i = 0; i <= squares.length; i++) {
-//      
-//            squares = " ";
-        
-// } 
-// console.log(square);
+const emptyGrid = document.querySelector(".button");
+   emptyGrid.addEventListener("click", function() {
+        console.log("button clicked");
+   let square = document.querySelectorAll(".squares", function() {
+          for (i = 0; i <= squares.length; i++) {                   
+                   squares[i].innerText = "";
+   }
+
+})        
+})
