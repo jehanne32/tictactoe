@@ -51,9 +51,11 @@ function checkForWinner() {
     }
 }
 
-// const empty = document.querySelectorAll(".square");
+// document.getElementById("button").click
+// let square = document.querySelectorAll(".squares");
 //     for (i = 0; i <= squares.length; i++) {
-//         if (squares === "X" || squares === "O") {
-//             squares = " ";
-//         }
-// }
+//      
+//            squares = " ";
+        
+// } 
+// console.log(square);
