@@ -53,10 +53,10 @@ function checkForWinner() {
 
 const emptyGrid = document.querySelector(".button");
    emptyGrid.addEventListener("click", function() {
-        console.log("button clicked");
+ //       console.log("Button clicked");
    let square = document.querySelectorAll(".squares", function() {
           for (i = 0; i <= squares.length; i++) {                   
-                   squares[i].innerText = "";
+                   squares[i].innerText = " ";
    }
 
 })        
