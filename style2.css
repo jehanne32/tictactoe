@@ -1,7 +1,11 @@
+/* set box size for page and background color*/
+
 * {
     box-sizing: border-box;
     background-color: ivory;
 }
+
+/* Set grid and attributes and fractions for page */
 
 .site {
     display: grid;
@@ -12,6 +16,8 @@
     "main right"
     "footer footer";
 }
+
+/* For grid parts set grid-area name and any attributes */
 
 .header {
     grid-area: header;
@@ -41,11 +47,11 @@ body {
     text-align: center;
 }
 
-
-
 h2 {
     text-decoration: underline;
 }
+
+/* Set attributes for squares and buttons */
 
 .gameFlexGrid {
     display: flex;
