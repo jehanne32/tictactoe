@@ -1,6 +1,8 @@
 # tictactoe
 General Assembly Tic Tac Toe Project
 
+![](./images/readmepic.jpg)
+
 1. As a user I should be able to have directions on how to play the game.
 2. As a user I should be able to start a new game.
 3. As a user I should be able to restart a game.
