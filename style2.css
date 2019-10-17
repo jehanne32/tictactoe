@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    background-color: ivory;
+    background-color:white;
 }
 
 /* Set grid and attributes and fractions for page */
@@ -10,17 +10,20 @@
 .site {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "header header"
-    "main right"
+    "header header header"
+    "pageTitle pageTitle"
+    "main rightside"
     "footer footer";
 }
 
+
+
 /* For grid parts set grid-area name and any attributes */
 
-.header {
-    grid-area: header;
+.pageTitle {
+    grid-area: pageTitle;
 }
 
 .main {
@@ -28,7 +31,7 @@
 }
 
 .right {
-    grid-area: right;
+    grid-area: rightside;
     margin-top: 125px;
 }
 
@@ -41,10 +44,45 @@
     margin-top: 40px;
 }
 
+.header{
+    grid-area: header;
+}
+.subHeader {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: subgrid; 
+    grid-template-areas: 
+    "firsttic heart secondtic";
+}
+
+#firsttic {
+    grid-area: firsttic;
+    margin: auto;
+}
+
+#secondtic {
+    grid-area: secondtic;
+    margin: auto;
+}
+
+.heart {
+    grid-area: heart;
+}
+
 body {
     font-family: 'Oswald', sans-serif;
     color: darkmagenta;
     text-align: center;
+}
+
+.headline {
+    text-align: right;
+    margin-right: 50px;
+}
+
+.heart {
+    width: 550px;
+    border-radius: 20px;
 }
 
 h2 {
