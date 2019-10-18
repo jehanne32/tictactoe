@@ -1,116 +1,81 @@
 /* set box size for page and background color*/
 
 * {
-  box-sizing: border-box;
-  background-color: white;
+    box-sizing: border-box;
+    background-color: ivory;
 }
 
 /* Set grid and attributes and fractions for page */
 
 .site {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "header header header"
-    "pageTitle pageTitle"
-    "main rightside"
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main right"
     "footer footer";
 }
 
 /* For grid parts set grid-area name and any attributes */
 
-.pageTitle {
-  grid-area: pageTitle;
+.header {
+    grid-area: header;
 }
 
 .main {
-  grid-area: main;
+    grid-area: main;
 }
 
 .right {
-  grid-area: rightside;
-  margin-top: 125px;
+    grid-area: right;
+    margin-top: 125px;
 }
 
 .player {
-  font-size: 50px;
+    font-size: 50px;
 }
 
 .footer {
-  grid-area: footer;
-  margin-top: 40px;
-}
-
-.header {
-  grid-area: header;
-}
-.subHeader {
-  display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
-  grid-template-columns: subgrid;
-  grid-template-areas: "firsttic heart secondtic";
-}
-
-#firsttic {
-  grid-area: firsttic;
-  margin: auto;
-}
-
-#secondtic {
-  grid-area: secondtic;
-  margin: auto;
-}
-
-.heart {
-  grid-area: heart;
+    grid-area: footer;
+    margin-top: 40px;
 }
 
 body {
-  font-family: "Oswald", sans-serif;
-  color: darkmagenta;
-  text-align: center;
-}
-
-.headline {
-  text-align: right;
-  margin-right: 50px;
-}
-
-.heart {
-  width: 550px;
-  border-radius: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: darkmagenta;
+    text-align: center;
 }
 
 h2 {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Set attributes for squares and buttons */
 
 .gameFlexGrid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .square {
-  display: flex;
-  height: 125px;
-  width: 125px;
-  border: 3px solid black;
-  text-align: center;
-  font-size: 85px;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    height: 125px;
+    width: 125px;
+    border: 3px solid black;
+    text-align: center;
+    font-size: 85px;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {
-  background-color: black;
-  color: white;
-  text-align: center;
-  font-size: 18px;
-  padding: 5px;
-  border-radius: 8px;
-  box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.4);
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.40);
 }
